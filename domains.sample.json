@@ -1,0 +1,16 @@
+{
+  "example.com": {
+    "projectId": "example-project",
+    "zoneName": "example-dot-com",
+    "records": {
+      "vps.example.com": {
+        "username": "root5automobile2said9round",
+        "password": "effort2twenty4month7about"
+      },
+      "home.example.com": {
+        "username": "wonderful5such9height5forgotten",
+        "password": "label5add3successful6wing"
+      }
+    }
+  }
+}

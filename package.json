@@ -1,0 +1,26 @@
+{
+  "name": "gcf-ddns",
+  "version": "1.0.0",
+  "description": "A Cloud Function implementing DynDns API for updating records in Google Cloud DNS",
+  "author": "Berk D. Demir (https://bdd.fi)",
+  "license": "BSD-2-Clause",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bdd/gcf-ddns"
+  },
+  "dependencies": {
+    "@google-cloud/dns": "^0.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "@google-cloud/functions-emulator": "^1.0.0-alpha.29"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "prestart": "functions start",
+    "start": "functions deploy nic --trigger-http",
+    "stop": "functions stop",
+    "deploy-prod": "gcloud beta functions deploy nic --memory=128MB --trigger-http"
+  }
+}
